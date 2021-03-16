@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="#EF4141"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product And Price details"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="italic"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="#50ECE7"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rice: 65 Tk. per kg."
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sugar: 35 Tk. per kg."
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Milk: 60 Tk. per kg."
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Onion: 80 Tk. per kg."
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Potato: 50 Tk. per kg."
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#4249EF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grocery"
+                    android:padding="10dp"></ImageView>
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groceries"
+                    android:textSize="25dp"
+                    android:textStyle="italic"
+                    android:padding="10dp"
+                    ></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addobjects"
+                    android:padding="10dp"></ImageView>
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textStyle="italic"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textColor="#E61212"
+                    android:id="@+id/rice_CheckBoxID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rice"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="10dp"></CheckBox>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <SeekBar
+                        android:id="@+id/rice_SeekbarID"
+                        android:max="10"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ></SeekBar>
+                    <TextView
+                        android:textColor="#AC49BD"
+                        android:id="@+id/riceValue_TextViewID"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textColor="#E61212"
+                    android:id="@+id/sugar_CheckBoxID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sugar"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="10dp"></CheckBox>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <SeekBar
+                        android:id="@+id/sugar_SeekbarID"
+                        android:max="10"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ></SeekBar>
+                    <TextView
+                        android:textColor="#AC49BD"
+                        android:id="@+id/sugarValue_TextViewID"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textColor="#E61212"
+                    android:id="@+id/milk_CheckBoxID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Milk"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="10dp"></CheckBox>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <SeekBar
+                        android:id="@+id/milk_SeekbarID"
+                        android:max="10"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ></SeekBar>
+                    <TextView
+                        android:textColor="#AC49BD"
+                        android:id="@+id/milkValue_TextViewID"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textColor="#E61212"
+                    android:id="@+id/onion_CheckBoxID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Onion"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="10dp"></CheckBox>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <SeekBar
+                        android:id="@+id/onion_SeekbarID"
+                        android:max="10"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ></SeekBar>
+                    <TextView
+                        android:textColor="#AC49BD"
+                        android:id="@+id/onionValue_TextViewID"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textColor="#E61212"
+                    android:id="@+id/potato_CheckBoxID"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Potato"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="10dp"></CheckBox>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <SeekBar
+                        android:id="@+id/potato_SeekbarID"
+                        android:max="10"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ></SeekBar>
+                    <TextView
+                        android:textColor="#AC49BD"
+                        android:id="@+id/potatoValue_TextViewID"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="italic"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="19dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Switch
+                    android:textColor="#392193"
+                    android:id="@+id/homeDelivery_SwitchID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Delivery:"
+                    android:padding="12dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:paddingLeft="5dp"
+                    ></Switch>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method:"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="12dp"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/radioGroupId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:textColor="#E61212"
+                        android:id="@+id/bkash_RadioButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="bkash"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        ></RadioButton>
+
+                    <RadioButton
+                        android:textColor="#30A11C"
+                        android:id="@+id/cash_RadioButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cash"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        ></RadioButton>
+
+                    <RadioButton
+                        android:textColor="#E68712"
+                        android:id="@+id/nogod_RadioButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nogod"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        ></RadioButton>
+
+                    <RadioButton
+                        android:textColor="#1240E6"
+                        android:id="@+id/creditCard_RadioButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Card"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        ></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:background="#E60B0B"
+                    android:id="@+id/submit_ButtonID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Place My Order"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/products_TextViewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/deliveryCharge_TextViewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/totalPrice_TextViewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/payment_TextViewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
